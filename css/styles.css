@@ -29,7 +29,7 @@
   text-align: center;
   background-color: black;
   color: white;
-  padding right: 80px;
+  padding-right: 80px;
   padding-left: 200px;
 }
 .xy{
@@ -54,7 +54,7 @@ h2{
   text-align: center;
 }
 .gh{
-  text-center:center;
+  text-align:center;
 }
 .col-md-4 h2{
   color: red;
@@ -68,3 +68,14 @@ h2{
 nav{
   font-size: 20px;
 }
+#Help{
+  text-align: center;
+}
+.details{
+  display: none;
+}
+.nairobi,.kiambu,.Mombasa,.Nakuru{
+  display: none;
+}
+
+
