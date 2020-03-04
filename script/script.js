@@ -1,33 +1,49 @@
-$(document).ready(function() {
-  
-    $('.navbar-collapse ul li a').click(function(){
-     /* always close responsive nav after click */
-    $('.navbar-toggle:visible').click();
-      }); 
-    
-   $('a[href*="#"]:not([href="#"])').click((e) => {
-      const target = $(e.target.hash);
-  
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top - 50
-        }, 1000);
-  
-        return false;
-      }
+$("document").ready(function(){
+    $(".help").click(function(){
+        $(".1").slideToggle()
     });
-    var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-  });
+function county(Countyname,subcounty){
+  this.Countyname = Countyname;
+  this.subcounties = [];
+    }
+    county.prototype.subcountieschoices = function(){
+        console.log(this.Countyname)
+        if(this.Countyname === "Nairobi"){
+            this.subcounties =["Embakasi","Kasarani","Langata","Westlands"];
+        }
+        else if(this.Countyname === "Kiambu"){
+            this.subcounties = ["Kikuyu","Limuru","Juja","Ruiru"];
+        }
+        else if (this.Countyname === "Mombasa"){
+            this.subcounties = ["Nyali","Jomvu","Changamwe","Mvita","Likoni"]
+        }
+        else if (this.Countyname === "Nakuru"){
+            this.subcounties = ["Njoro","Molo","Nakuru","Naivasha"]
+        }
+        return this.subcounties
+    }
+    $(".counties").click(function(){
+  let KenyaCounty = $(".counties").val()
+  console.log(KenyaCounty)
+      let counties = new county(KenyaCounty)
+      let final_subcounties =counties.subcountieschoices()
+      console.log(final_subcounties)
+      final_subcounties.map(function(subcounty){
+        $(".subcounties").append(`<option value=${subcounty}}subcounty">${subcounty}</option>`);
+      })
+      alert("Searching.....")
+        if(KenyaCounty === "Kiambu"){
+            $("#kiambu").slideToggle();
+        }
+        else if(KenyaCounty === "Nakuru"){
+            $(".Nakuru").slideToggle();
+        }
+        else if(KenyaCounty === "Nairobi"){
+            $(".nairobi").slideToggle();
+        }
+        else if(KenyaCounty === "Mombasa"){
+            $(".Mombasa").slideToggle();
+        }
+    });   
+});
