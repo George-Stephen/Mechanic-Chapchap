@@ -69,4 +69,20 @@ function county(Countyname,subcounty){
         $(".email").text(this.email);
         $(".number").text(this.number)
     }
+    $(".send").click(function(){
+        var uName = $("#Name").val();
+        var uEmail = $("#Email").val();
+        var uPhone = $("#Phone").val();
+        let userDetails = new user(uName,uEmail,uPhone)
+        if(uName ===""|| uEmail === "" || uPhone === ""){
+            alert('Please enter your details')
+        }
+        else  $(".service").slideToggle(500)
+        userDetails.details();
+
+    });
+    $(".parts").click(function(){
+        $("#parts").fadeToggle(200);
+        $(".help").fadeToggle(200);
+    })
 });

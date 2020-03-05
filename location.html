@@ -28,12 +28,18 @@
       </nav>
       
     <br><br>
+    <div class="story">
     <form>
-        <input type="text" placeholder="Name ..." class="Name">
-        <input type="email" placeholder="Email ..." class="Email">
-        <input type="text" placeholder="Phone..." class="Phone"><br><br>
-        <button type="button">Send</button>
+        <input type="text" placeholder="Name ..." id="Name">
+        <input type="email" placeholder="Email ..." id="Email">
+        <input type="text" placeholder="Phone..." id="Phone"><br><br>
+        <button type="button" class="send">Send</button>
     </form>
+    
+    <p>Hi <span class="name"></span> We have recieved your details.<br>Your Email address is <span class="email"></span><br>and your phone number is
+    <span class="number">.</span><br>We are gonna use these details to contact you.Thank you</p>
+    </div>
+    <div class="service">
     <div class="container-fluid help">
     <div id="Help">
     <button type="button" class="btn btn-warning btn-lg help">Help Locator </button>
@@ -281,20 +287,26 @@
     <div id="Carparts">
         <button type="button" class="parts">Available car parts</button>
     </div>
-    <div class="row">
-    <div class=" col-md-4">
-        <img src="images/car tyre.jpg" width="1000px" height="1000px">
+    <br><br>
+    <div class="row" id="parts">
+    <div class=" col-md-3">
+        <img src="images/car tyre.jpg" width="300px" height="300px">
+        <p>Car tyre for sale</p>
     </div>
-    <div class="col-md-4">
-        <img src="images/car window.jpg" width="1000px" height="1000px">
+    <div class="col-md-3">
+        <img src="images/car window.jpg" width="300px" height="300px">
+        <p>Car window for sale</p>
     </div>
-    <div class="col-md-4">
-        <img src="images/Car-Engine.jpg" width="1000px" height="1000px">
+    <div class="col-md-3">
+        <img src="images/Car-Engine.jpg" width="300px" height="300px">
+        <p>Car engine for sale</p>
     </div>
-    <div class="col-md-4">
-        <img src="images/a63801f01b389828c8359ea92a500cd6a1be26e9.jpg" width="1000px" height="1000px">
+    <div class="col-md-3">
+        <img src="images/a63801f01b389828c8359ea92a500cd6a1be26e9.jpg" width="300px" height="300px">
+        <p>Car Jack for sale</p>
     </div>
     </div>
+</div>
 </div>
 </body>
 </html>

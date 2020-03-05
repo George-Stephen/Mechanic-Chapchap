@@ -83,3 +83,9 @@ label{
   #Carparts{
     text-align: center;
   }
+  .story{
+    text-align: center;
+  }
+  .service,#parts{
+    display: none;
+  }
