@@ -1,6 +1,85 @@
+#Help{
+  text-align: center;
+}
 .details{
   display: none;
 }
 .nairobi,.kiambu,.Mombasa,.Nakuru{
   display: none;
 }
+.count{
+padding-left: 600px;
+font-size: 30px;
+
+}
+.jumbotron{
+  text-align: center;
+  background-color: #F7CA18;
+}
+label{
+  color: white;
+  font-size: 30px;
+}
+.navbar {
+  margin-bottom: 0;
+  border: 0;
+  font-size: 20px;
+  background-color: #F7CA18;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.navbar:hover {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav li a:link,
+.nav li a:visited {
+  text-align: left;
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px){
+  .nav li a:after {
+    display: block;
+    content: "";
+    border-bottom: solid 2px #f8eee7;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 100% 50%;
+  }
+
+  .nav li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: 0 50%;
+  }
+  }
+
+  .icon-bar {
+    display: block;
+    width: 15px;
+    height: 5px;
+    background-color: #49274a;
+    margin: 6px 0;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.5);
+}
+
+  .navbar-brand:link,
+  .navbar-brand:visited {
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 3px;
+  }
+
+  .navbar-brand:hover {
+    color: #F7CA18;
+  }
+  .help{
+    background-image: url(../images/c5.jpg);
+  } 
+  #Carparts{
+    text-align: center;
+  }

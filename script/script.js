@@ -1,6 +1,6 @@
 $("document").ready(function(){
     $(".help").click(function(){
-        $(".1").slideToggle()
+        $(".details").fadeIn()
     });
 
 function county(Countyname,subcounty){
@@ -34,16 +34,39 @@ function county(Countyname,subcounty){
       })
       alert("Searching.....")
         if(KenyaCounty === "Kiambu"){
-            $("#kiambu").slideToggle();
+            $(".kiambu").slideToggle();
+            $(".Nakuru").fadeOut();
+            $(".nairobi").fadeOut();
+            $(".Mombasa").fadeOut();
+            
         }
         else if(KenyaCounty === "Nakuru"){
             $(".Nakuru").slideToggle();
+            $(".kiambu").fadeOut();
+            $(".nairobi").fadeOut();
+            $(".Mombasa").fadeOut();
         }
         else if(KenyaCounty === "Nairobi"){
             $(".nairobi").slideToggle();
+            $(".Nakuru").fadeOut();
+            $(".kiambu").fadeOut();
+            $(".Mombasa").fadeOut();
         }
         else if(KenyaCounty === "Mombasa"){
             $(".Mombasa").slideToggle();
+            $(".Nakuru").fadeOut();
+            $(".nairobi").fadeOut();
+            $(".kiambu").fadeOut();
         }
-    });   
+    }); 
+    function user(name,email,number){
+        this.name = name;
+        this.email = email;
+        this.number = number;
+    }  
+    user.prototype.details = function(){
+        $(".name").text(this.name);
+        $(".email").text(this.email);
+        $(".number").text(this.number)
+    }
 });
