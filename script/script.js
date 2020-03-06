@@ -35,13 +35,6 @@ function county(Countyname,subcounty){
       alert("Searching.....")
         if(KenyaCounty === "Kiambu"){
             $(".kiambu").slideToggle();
-<<<<<<< HEAD
-            $(".Nakuru").fadeOut();
-            $(".nairobi").fadeOut();
-            $(".Mombasa").fadeOut();
-            
-=======
->>>>>>> bb9f57a10d05a726d78f2d502147af4b57ede221
         }
         else if(KenyaCounty === "Nakuru"){
             $(".Nakuru").slideToggle();
