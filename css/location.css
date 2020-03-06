@@ -1,6 +1,9 @@
 #Help{
   text-align: center;
 }
+#xy {
+  background-color: white;
+}
 .details{
   display: none;
 }
@@ -77,9 +80,7 @@ label{
   .navbar-brand:hover {
     color: #F7CA18;
   }
-  .help{
-    background-image: url(../images/c5.jpg);
-  } 
+  
   #Carparts{
     text-align: center;
   }
@@ -89,3 +90,165 @@ label{
   .service,#parts{
     display: none;
   }
+label{
+  color: rgb(36, 16, 16);
+  font-size: 20px;
+}
+.userStory{
+  display: none;
+}
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400|Philosopher:400,700');
+html,
+body {
+  background-color: #fff;
+  color: #3e4546;
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+#Help{
+  text-align: center;
+}
+.details{
+  display: none;
+}
+.nairobi,.kiambu,.Mombasa,.Nakuru{
+  display: none;
+}
+.count{
+padding-left: 600px;
+font-size: 30px;
+
+}
+.jumbotron{
+  text-align: center;
+  background-color: #F7CA18;
+}
+label{
+  color: black;
+  font-size: 30px;
+}
+.nav{
+  color: white;
+}
+
+@media screen and (min-width: 768px){
+  .nav li a:after {
+    display: block;
+    content: "";
+    border-bottom: solid 2px #f8eee7;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 100% 50%;
+  }
+
+}
+  #Carparts{
+    text-align: center;
+  }
+  #xy{
+  text-align: center;
+
+}
+.ef{
+text-align: center;
+padding-left: 200px;
+padding-right: 200px;
+
+}
+#Carparts{
+  text-align: center;
+}
+.Jimmy{
+  display: none;
+  background-color: black;
+  color: white;
+
+}
+.yellow{
+  display: none;
+  background-color: black;
+  color: white;
+
+}
+.Mig{
+  display: none;
+  background-color: black;
+  color:white;
+
+}
+.BlackDark{
+  display: none;
+  background-color: black;
+  color:white;
+
+}
+.Happy{
+  display: none;
+  background-color: black;
+  color: white;
+
+}
+.Settings{
+  display: none;
+  background-color: black;
+  color: white;
+
+}
+.Burned{
+  display: none;
+  background-color: black;
+  color:white;
+
+}
+.Giraffe{
+  display: none;
+  background-color: black;
+  color: white;
+
+}
+.col-md-3{
+  padding-bottom: 20px;
+}
+/*--------FOOTER -------*/
+
+footer {
+  padding: 20px;
+  background-color: #889495;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-nav {
+  list-style: none;
+  font-size: 80%;
+}
+
+.footer-nav h4,
+.contact {
+  font-size: 120%;
+}
+
+footer p {
+  font-size: 75%;
+}
+
+footer a:link,
+footer a:visited {
+  color: #fed1d3;
+  transition: 0.3s;
+  margin-top: 5px;;
+}
+
+footer a:hover,
+footer a:active {
+  color: #fd9fa4;
+  text-decoration: none;
+}
+
+hr {
+  width: 60%;
+  margin: 10px auto;
+}

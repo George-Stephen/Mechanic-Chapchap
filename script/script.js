@@ -59,30 +59,34 @@ function county(Countyname,subcounty){
             $(".kiambu").fadeOut();
         }
     }); 
-    function user(name,email,number){
+    function user(name,email,number,registration){
         this.name = name;
         this.email = email;
         this.number = number;
+        this.registration = registration
     }  
     user.prototype.details = function(){
         $(".name").text(this.name);
         $(".email").text(this.email);
         $(".number").text(this.number)
+        $(".regNumb").text(this.registration)
     }
     $(".send").click(function(){
         var uName = $("#Name").val();
         var uEmail = $("#Email").val();
         var uPhone = $("#Phone").val();
-        let userDetails = new user(uName,uEmail,uPhone)
-        if(uName ===""|| uEmail === "" || uPhone === ""){
+        var uRegistration = $("#Registration").val()
+        let userDetails = new user(uName,uEmail,uPhone,uRegistration)
+        if(uName ===""|| uEmail === "" || uPhone === "" || uRegistration === ""){
             alert('Please enter your details')
         }
         else  $(".service").slideToggle(500)
+        $(".userStory").slideToggle()
         userDetails.details();
 
     });
     $(".parts").click(function(){
-        $("#parts").fadeToggle(200);
-        $(".help").fadeToggle(200);
+        $("#parts").slideToggle();
+
     })
 });
